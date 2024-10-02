@@ -1,9 +1,5 @@
 import java.util.Scanner;
-
 public class Main {
-    public Main() {
-    }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Оберіть функцію, 1(+), 2(-), 3(*), 4(/): ");
@@ -27,47 +23,43 @@ public class Main {
                 break;
             default:
                 System.out.println("Error!!!");
+                break;
         }
-
     }
-
-    public static void SUM() {
+    public  static void SUM(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть перше число");
-        float a = (float)scanner.nextInt();
+        float a = scanner.nextInt();
         System.out.println("Введіть друге число");
-        float b = (float)scanner.nextInt();
-        float c = a + b;
+        float b = scanner.nextInt();
+        float c = a+b;
         System.out.println("Сума = " + c);
     }
-
-    public static void RIZ() {
+    public  static void RIZ(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть перше число");
-        float a = (float)scanner.nextInt();
+        float a = scanner.nextInt();
         System.out.println("Введіть друге число");
-        float b = (float)scanner.nextInt();
-        float c = a - b;
+        float b = scanner.nextInt();
+        float c = a-b;
         System.out.println("Різниця = " + c);
     }
-
-    public static void MNO() {
+    public  static void MNO(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть перше число");
-        float a = (float)scanner.nextInt();
+        float a = scanner.nextInt();
         System.out.println("Введіть друге число");
-        float b = (float)scanner.nextInt();
-        float c = a * b;
+        float b = scanner.nextInt();
+        float c = a*b;
         System.out.println("Добуток = " + c);
     }
-
-    public static void DIL() {
+    public  static void DIL(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть перше число");
-        float a = (float)scanner.nextInt();
+        float a = scanner.nextInt();
         System.out.println("Введіть друге число");
-        float b = (float)scanner.nextInt();
-        float c = a / b;
+        float b = scanner.nextInt();
+        float c = a/b;
         System.out.println("Частка = " + c);
     }
 }
